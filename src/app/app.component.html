@@ -1,6 +1,14 @@
-<h1>Angular Router</h1>
+<!-- header -->
+<app-header></app-header>
 <nav>
+  <a routerLink="/home" routerLinkActive="active">Home</a> |
+  <a routerLink="/buy-anew-car" routerLinkActive="active">Buy A New Car</a> | 
+  <a routerLink="/buy-aused-car" routerLinkActive="active">Buy A Used Car</a> |
+  <a routerLink="/rent-acar" routerLinkActive="active">Rent A Car</a> |
+  <a routerLink="/contact" routerLinkActive="active">Contact</a> | 
   <a routerLink="/display-auto-list" routerLinkActive="active">Display Auto List</a> | 
-  <a routerLink="/display-auto/:1" routerLinkActive="active">Display Auto</a>
+  <a routerLink="/display-auto/:1" routerLinkActive="active">Display Auto</a> 
 </nav>
 <router-outlet></router-outlet>
+<!-- footer -->
+<app-footer></app-footer>

@@ -5,12 +5,37 @@ import { RouterModule, Routes } from '@angular/router';
 import { DisplayAutoComponent } from './display-auto/display-auto.component';
 import { DisplayAutoListComponent } from './display-auto-list/display-auto-list.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { HomeComponent } from './home/home.component';
+import { BuyANewCarComponent } from './buy-anew-car/buy-anew-car.component';
+import { BuyAUsedCarComponent } from './buy-aused-car/buy-aused-car.component';
+import { RentACarComponent } from './rent-acar/rent-acar.component';
+import { ContactComponent } from './contact/contact.component';
 
 const appRoutes: Routes = [
+  {
+    path: 'home',
+    component: HomeComponent
+  },
+  {
+    path: 'buy-anew-car',
+    component: BuyANewCarComponent
+  },
+  {
+    path: 'buy-aused-car',
+    component: BuyAUsedCarComponent
+  },
+  {
+    path: 'rent-acar',
+    component: RentACarComponent
+  },
+  {
+    path: 'contact',
+    component: ContactComponent
+  },
   { 
     path: 'display-auto-list', 
     component: DisplayAutoListComponent 
-  },
+  },  
   {
     path: 'display-auto/:id',
     component: DisplayAutoComponent
@@ -28,6 +53,11 @@ const appRoutes: Routes = [
 
 @NgModule({
   declarations: [
+    HomeComponent,
+    BuyANewCarComponent,
+    BuyAUsedCarComponent,
+    RentACarComponent,
+    ContactComponent,
     DisplayAutoComponent,
     DisplayAutoListComponent,
     PageNotFoundComponent
