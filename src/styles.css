@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Fix the boostrap issue with un needed empty space */
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+}

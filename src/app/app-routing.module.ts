@@ -2,14 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 
-import { DisplayAutoComponent } from './display-auto/display-auto.component';
-import { DisplayAutoListComponent } from './display-auto-list/display-auto-list.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { HomeComponent } from './home/home.component';
-import { BuyANewCarComponent } from './buy-anew-car/buy-anew-car.component';
-import { BuyAUsedCarComponent } from './buy-aused-car/buy-aused-car.component';
-import { RentACarComponent } from './rent-acar/rent-acar.component';
-import { ContactComponent } from './contact/contact.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { HomeComponent } from './components/home/home.component';
+import { BuyANewCarComponent } from './components/buy-a-new-car/buy-a-new-car.component';
+import { BuyAUsedCarComponent } from './components/buy-a-used-car/buy-a-used-car.component';
+import { RentACarComponent } from './components/rent-a-car/rent-a-car.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 const appRoutes: Routes = [
   {
@@ -17,32 +15,28 @@ const appRoutes: Routes = [
     component: HomeComponent
   },
   {
-    path: 'buy-anew-car',
+    path: 'buy-a-new-car',
     component: BuyANewCarComponent
   },
   {
-    path: 'buy-aused-car',
+    path: 'buy-a-used-car',
     component: BuyAUsedCarComponent
   },
   {
-    path: 'rent-acar',
+    path: 'rent-a-car',
     component: RentACarComponent
   },
   {
     path: 'contact',
     component: ContactComponent
-  },
-  { 
-    path: 'display-auto-list', 
-    component: DisplayAutoListComponent 
-  },  
-  {
-    path: 'display-auto/:id',
-    component: DisplayAutoComponent
-  },
+  },   
+  // {
+  //   path: 'display-auto/:id',
+  //   component: DisplayAutoComponent
+  // },
   { 
     path: '', 
-    redirectTo: '/display-auto-list', 
+    redirectTo: '/home', 
     pathMatch: 'full' 
   },
   { 
@@ -57,9 +51,7 @@ const appRoutes: Routes = [
     BuyANewCarComponent,
     BuyAUsedCarComponent,
     RentACarComponent,
-    ContactComponent,
-    DisplayAutoComponent,
-    DisplayAutoListComponent,
+    ContactComponent,    
     PageNotFoundComponent
   ],
   imports: [

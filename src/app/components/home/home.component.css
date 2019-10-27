@@ -1,0 +1,28 @@
+.btn-color1 {
+  color: white;
+  background-color: #c5d5cb;
+  border: none !important;
+}
+
+.btn-color1:hover {    
+  background-color: #acc3b5;   
+  border: none !important;
+}
+
+.btn-color1:active {    
+  background-color: #acc3b5 !important; 
+  border: none !important;
+}
+
+.btn-color1:visited {    
+  background-color: #acc3b5 !important; 
+  border-color: red  !important;
+}
+
+.text-color1 {
+  color: #82817d;
+}
+
+.clickable {
+  cursor: pointer;
+}

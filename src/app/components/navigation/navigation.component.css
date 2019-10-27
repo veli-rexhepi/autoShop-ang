@@ -1,0 +1,9 @@
+.nav-pills > .nav-item > .nav-link {
+  color: #9fa8a3;
+  font-weight: bold;
+}
+
+.nav-pills > .nav-item > .active {
+  color: white;
+  background-color: #c5d5cb;
+}

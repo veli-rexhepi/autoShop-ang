@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+// declare var $: any;
+// console.log(`jQuery version: ${$.fn.jquery}`);
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
