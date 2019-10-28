@@ -26,3 +26,18 @@
 .clickable {
   cursor: pointer;
 }
+
+.bg-image {
+  background: url("src/assets/images/bmw8_bg.png") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed; 
+  padding: 125px 0;
+}
+
+.bg-image-caption {
+  color: whitesmoke;
+  text-align: center;
+}
