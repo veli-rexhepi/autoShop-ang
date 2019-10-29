@@ -1,5 +1,4 @@
-<div class="row">  
-
+<div class="row">
   <div class="card-deck d-flex justify-content-sm-center col-sm-12 m-0 px-3 py-3">
     <ng-template ngFor let-car [ngForOf]="cars | paginate:{itemsPerPage: 6, currentPage:p}">      
       <div class="card shadow-sm col-sm-2 p-0">
@@ -18,27 +17,9 @@
           </div>
       </div>
     </ng-template>
-  </div>  
+  </div>    
+</div>
 
-  <pagination-controls (pageChange)="p=$event"></pagination-controls>
-
-  <nav aria-label="Pagination">
-      <ul class="pagination">
-        <li class="page-item disabled">
-          <span class="page-link">Previous</span>
-        </li>
-        <li class="page-item"><a class="page-link">1</a></li>
-        <li class="page-item active" aria-current="page">
-          <span class="page-link">
-            2
-            <span class="sr-only">(current)</span>
-          </span>
-        </li>
-        <li class="page-item"><a class="page-link">3</a></li>
-        <li class="page-item">
-          <a class="page-link">Next</a>
-        </li>
-      </ul>
-    </nav>
-
+<div class="d-flex justify-content-sm-center">
+  <pagination-controls class="my-pagination" (pageChange)="p=$event"></pagination-controls>
 </div>

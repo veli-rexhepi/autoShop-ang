@@ -1,3 +1,42 @@
 .buyausedcar-item-property{
   display: block;
 }
+
+.my-pagination /deep/ .ngx-pagination li {
+  border: 1px solid lightgrey;
+  border-right: none;  
+  margin-right: 0;
+}
+
+.my-pagination /deep/ .ngx-pagination li:first-child {
+  text-align: center;
+  min-width: 80px;
+  border-left: 1px solid lightgrey;  
+  border-top-left-radius: 5px; 
+  border-bottom-left-radius: 5px;
+  margin-right: 0;
+}
+
+.my-pagination /deep/ .ngx-pagination li:last-child {
+  text-align: center;
+  min-width: 80px;
+  border-right: 1px solid lightgrey;  
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-right: 0;
+}
+
+.my-pagination /deep/ .ngx-pagination .pagination-previous a,
+.my-pagination /deep/ .ngx-pagination .pagination-next a,
+.my-pagination /deep/ .ngx-pagination li a {  
+  text-decoration: none;
+}
+
+.my-pagination /deep/ .ngx-pagination .pagination-next a::after, 
+.my-pagination /deep/ .ngx-pagination .pagination-next.disabled::after,
+.my-pagination /deep/ .ngx-pagination .pagination-previous a::before, 
+.my-pagination /deep/ .ngx-pagination .pagination-previous.disabled::before {
+  content: none;
+  display: initial;
+  margin-left: 0;
+}
