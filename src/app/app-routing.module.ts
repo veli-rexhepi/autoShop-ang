@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { HomeComponent } from './components/home/home.component';
@@ -59,7 +60,8 @@ const appRoutes: Routes = [
       appRoutes,
       { enableTracing: true }
     ),
-    CommonModule
+    CommonModule,
+    NgxPaginationModule
   ],
   exports: [
     RouterModule

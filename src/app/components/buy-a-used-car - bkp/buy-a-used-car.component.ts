@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+// import { NgxPaginationModule } from 'ngx-pagination';
 
 import { Car } from 'src/app/classes/car';
 
@@ -38,6 +39,44 @@ export class BuyAUsedCarComponent implements OnInit {
     new Car(24, 'bmw3 12 350x200.png', 'BMW 3', '120 kW (160 Hp)', '1.995 ccm', 'Diesel', 'Manual gearbox', 'Red Metallic', 'Price 12,000 $'),
   ];
 
+  // Get the total number of items
+  totalItems = this.cars.length;
+  
+  // Define how many items shall display a row. Maximum suported items by design are 6 per row
+  itemsLimitPerRow = 6;
+
+  // Calculate the number of needed rows to display all items
+  getDisplayItemsRowNumber = () => {
+    let itemsRowNumber: number;
+
+    if (this.totalItems % this.itemsLimitPerRow == 0) {
+      itemsRowNumber = this.totalItems / this.itemsLimitPerRow;
+    } else {
+      itemsRowNumber =  Math.floor(this.totalItems / this.itemsLimitPerRow) + 1;
+    }
+
+    let itemsRowNumberArray = [];
+    for (let i = 0; i < itemsRowNumber; i ++) {
+      itemsRowNumberArray.push(i);
+    }
+    return itemsRowNumberArray;
+  }   
+
+  // p: number = 1;
+  // collection: any[] = this.cars;
+
   ngOnInit() {    
   }  
+
+  collection = [];
+  constructor(){
+    for(let i=1;i<=100;i++){
+      let Obj = {'name': `Employee Name ${i}`,'code': `EMP00 ${i}`}
+      this.collection.push(Obj);
+    }
+  }
+  
 }
+
+// let test = new BuyAUsedCarComponent();
+// test.getDisplayItemsRowNumber;
