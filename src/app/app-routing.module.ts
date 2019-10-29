@@ -36,11 +36,6 @@ const appRoutes: Routes = [
   //   component: DisplayAutoComponent
   // },
   { 
-    path: 'autoShop-ang', 
-    redirectTo: 'home', 
-    pathMatch: 'full' 
-  },
-  { 
     path: '', 
     redirectTo: 'home', 
     pathMatch: 'full' 
