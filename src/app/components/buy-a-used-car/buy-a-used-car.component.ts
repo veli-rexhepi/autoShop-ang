@@ -38,6 +38,8 @@ export class BuyAUsedCarComponent implements OnInit {
     new Car(24, 'bmw3 12 350x200.png', 'BMW 3', '120 kW (160 Hp)', '1.995 ccm', 'Diesel', 'Manual gearbox', 'Red Metallic', 'Price 12,000 $'),
   ];
 
+  p: number = 1;
+
   ngOnInit() {    
   }  
 }
